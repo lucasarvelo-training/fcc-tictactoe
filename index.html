@@ -1,72 +1,86 @@
-<div id="modal-options" class="modal">
-  <div class="options">
-    <div class="options-header">
-      <h2>Welcome to Tic Tac Toe</h2>
-    </div>
-    <div class="options-body">
-      <h3>Rules:</h3><br>The object of Tic Tac Toe is to get three in a row. You play on a three by three game board. The first player is known as X and the second is O. Players alternate placing Xs and Os on the game board until either oppent has three in
-      a row or all nine squares are filled.
-    </div>
-    <div class="options-footer">
-      <button id="btn-one-player" class="btn-option" value="1"><span>One Player</span></button>
-      <button id="btn-two-players" class="btn-option" value="2"><span>Two Players</span></button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <script type="text/javascript" src="script.js" ></script>
+  <div id="modal-options" class="modal">
+    <div class="options">
+      <div class="options-header">
+        <h2>Welcome to Tic Tac Toe</h2>
+      </div>
+      <div class="options-body">
+        <h3>Rules:</h3><br>The object of Tic Tac Toe is to get three in a row. You play on a three by three game board. The first player is known as X and the second is O. Players alternate placing Xs and Os on the game board until either oppent has three in
+        a row or all nine squares are filled.
+      </div>
+      <div class="options-footer">
+        <button id="btn-one-player" class="btn-option" value="1"><span>One Player</span></button>
+        <button id="btn-two-players" class="btn-option" value="2"><span>Two Players</span></button>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="modal-marks" class="modal hide">
-  <div class="options">
-    <div id="modal-marks-header" class="options-header">
-      <h2>Player One</h2>
-    </div>
-    <div class="options-body">
-      <h2>Would you like to be X or O?</h2>
-    </div>
-    <div class="options-footer">
-      <button id="btn-o" class="btn-option" value="o">
-          <span><i class="far fa-circle"></i></span>
-        </button>
-      <button id="btn-x" class="btn-option" value="x">
-          <span><i class="fas fa-times"></i></span>
-</button>
+  <div id="modal-marks" class="modal hide">
+    <div class="options">
+      <div id="modal-marks-header" class="options-header">
+        <h2>Player One</h2>
+      </div>
+      <div class="options-body">
+        <h2>Would you like to be X or O?</h2>
+      </div>
+      <div class="options-footer">
+        <button id="btn-o" class="btn-option" value="o">
+            <span><i class="far fa-circle"></i></span>
+          </button>
+        <button id="btn-x" class="btn-option" value="x">
+            <span><i class="fas fa-times"></i></span>
+  </button>
+      </div>
     </div>
   </div>
-</div>
-</div>
+  </div>
 
-<div id="modal-winner" class="modal hide">
-  <div class="options">
-    <div class="options-header">
-      <h2>Well Play!!!</h2>
-    </div>
-    <div class="options-body">
-      <div id="winner-msg" class="winner-msg">
-        The Winner is X</div>
-      <h2>Try Again?</h2>
-    </div>
-    <div class="options-footer">
-      <button id="btn-again" class="btn-option"><span>Yes</span></button>
-      <button id="modal-reset-btn" class="btn-option btn-reset"><span>No</span></button>
+  <div id="modal-winner" class="modal hide">
+    <div class="options">
+      <div class="options-header">
+        <h2>Well Play!!!</h2>
+      </div>
+      <div class="options-body">
+        <div id="winner-msg" class="winner-msg">
+          The Winner is X</div>
+        <h2>Try Again?</h2>
+      </div>
+      <div class="options-footer">
+        <button id="btn-again" class="btn-option"><span>Yes</span></button>
+        <button id="modal-reset-btn" class="btn-option btn-reset"><span>No</span></button>
+      </div>
     </div>
   </div>
-</div>
 
-<div id="container" class="container hide">
-  <div class="board">
-    <div class="board-turn" id="turn">
-      turn
-    </div>
-    <div id='0' class="cell"></div>
-    <div id='1' class="cell"></div>
-    <div id='2' class="cell"></div>
-    <div id='3' class="cell"></div>
-    <div id='4' class="cell"></div>
-    <div id='5' class="cell"></div>
-    <div id='6' class="cell"></div>
-    <div id='7' class="cell"></div>
-    <div id='8' class="cell"></div>
-    <div class="dashboard">
-      <button id="reset-btn" class="btn-reset btn-option"><span>Restart</span></button>
+  <div id="container" class="container hide">
+    <div class="board">
+      <div class="board-turn" id="turn">
+        turn
+      </div>
+      <div id='0' class="cell"></div>
+      <div id='1' class="cell"></div>
+      <div id='2' class="cell"></div>
+      <div id='3' class="cell"></div>
+      <div id='4' class="cell"></div>
+      <div id='5' class="cell"></div>
+      <div id='6' class="cell"></div>
+      <div id='7' class="cell"></div>
+      <div id='8' class="cell"></div>
+      <div class="dashboard">
+        <button id="reset-btn" class="btn-reset btn-option"><span>Restart</span></button>
+      </div>
     </div>
   </div>
-</div>
+</body>
+</html>
